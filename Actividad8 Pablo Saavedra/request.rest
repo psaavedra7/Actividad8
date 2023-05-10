@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/inmueble
+
+###
+POST http://localhost:3000/api/inmueble
+Content-Type: application/json
+
+{
+    "piso": "Avenida Trinidad 5",
+    "extensión": 120,
+    "habitaciones": 3,
+    "alquilado": true,
+    "propietario": "Dory",
+    "email": "dory@gmail.com"
+}
+
+###
+PUT http://localhost:3000/api/inmueble/645b6c4bf643ac630c41ed04
+Content-Type: application/json
+
+{
+    "piso": "Avenida Trinidad 5",
+    "extensión": 120,
+    "habitaciones": 3,
+    "alquilado": false,
+    "propietario": "Dory",
+    "email": "dory@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/inmueble/645b6c4bf643ac630c41ed04
+
